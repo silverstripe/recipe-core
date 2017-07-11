@@ -2,6 +2,8 @@
     "name": "silverstripe/recipe-core",
     "type": "silverstripe-recipe",
     "description": "SilverStripe framework-only core recipe",
+    "homepage": "http://silverstripe.org",
+    "license": "BSD-3-Clause",
     "require": {
         "silverstripe/recipe-plugin": "^0.1",
         "silverstripe/assets": "1.0.x-dev",
