@@ -4,9 +4,9 @@
     "description": "SilverStripe framework-only core recipe",
     "require": {
         "silverstripe/recipe-plugin": "^0.1",
-        "silverstripe/assets": "1.0.x-dev",
-        "silverstripe/config": "1.0.x-dev",
-        "silverstripe/framework": "4.0.x-dev"
+        "silverstripe/assets": "2.x-dev",
+        "silverstripe/config": "2.x-dev",
+        "silverstripe/framework": "5.x-dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7"
