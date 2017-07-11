@@ -5,7 +5,7 @@
   "vendors": [
     "silverstripe"
   ],
-  "upgrade-only": [
+  "exclude": [
     "silverstripe/recipe-plugin"
   ]
 }
