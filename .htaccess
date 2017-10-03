@@ -39,7 +39,7 @@ ErrorDocument 500 /assets/error-500.html
 
     # Deny access to vendor, unless you're requesting main.php
     # Not restricting to the start of the path to support RewriteBase
-    RewriteCond %{REQUEST_URI} !^/vendor/silverstripe/framework/main\.php
+    RewriteCond %{REQUEST_URI} !/vendor/silverstripe/framework/main\.php
     RewriteRule ^vendor(/|$) - [F,L,NC]
 
     # Deny access to potentially sensitive files and folders
