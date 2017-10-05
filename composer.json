@@ -17,7 +17,8 @@
         "project-files": [
             "mysite/*",
             ".htaccess",
-            "web.config"
+            "web.config",
+            "index.php"
         ],
         "branch-alias": {
             "1.x-dev": "1.0.x-dev",
