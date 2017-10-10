@@ -18,7 +18,9 @@
             "mysite/*",
             ".htaccess",
             "web.config",
-            "index.php"
+            "index.php",
+            "install.php",
+            "install-frameworkmissing.html"
         ],
         "branch-alias": {
             "1.x-dev": "1.0.x-dev",
