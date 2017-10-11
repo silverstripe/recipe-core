@@ -1,7 +1,5 @@
 ---
-Name: mysite
-Before:
-  - coreconfig
+Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
