@@ -7,7 +7,7 @@
     "require": {
         "silverstripe/recipe-plugin": ">=0.1@dev <1.0",
         "silverstripe/assets": "1.1.x-dev",
-        "silverstripe/config": "1.1.x-dev",
+        "silverstripe/config": "1.0.x-dev",
         "silverstripe/framework": "4.1.x-dev"
     },
     "require-dev": {
