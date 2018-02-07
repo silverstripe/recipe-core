@@ -9,10 +9,10 @@
  ************************************************************************************
  ************************************************************************************/
 
-if (!file_exists(__DIR__ . '/vendor/silverstripe/framework')
-    || !file_exists(__DIR__ . '/vendor/silverstripe/framework/_config.php')
-) {
-    include 'install-frameworkmissing.html';
+if (file_exists(__DIR__ . '/vendor/silverstripe/framework/src/Dev/Install/install.php')) {
+    include __DIR__ . '/vendor/silverstripe/framework/src/Dev/Install/install.php';
+} elseif (file_exists(__DIR__ . '/../vendor/silverstripe/framework/src/Dev/Install/install.php')) {
+    include __DIR__ . '/../vendor/silverstripe/framework/src/Dev/Install/install.php';
 } else {
-    include './vendor/silverstripe/framework/src/Dev/Install/install.php';
+    include 'install-frameworkmissing.html';
 }

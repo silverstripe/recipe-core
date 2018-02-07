@@ -15,7 +15,9 @@
     },
     "extra": {
         "project-files": [
-            "mysite/*",
+            "mysite/*"
+        ],
+        "public-files": [
             ".htaccess",
             "web.config",
             "index.php",
