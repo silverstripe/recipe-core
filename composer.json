@@ -23,11 +23,7 @@
             "index.php",
             "install.php",
             "install-frameworkmissing.html"
-        ],
-        "branch-alias": {
-            "1.x-dev": "1.1.x-dev",
-            "dev-master": "2.x-dev"
-        }
+        ]
     },
     "config": {
         "process-timeout": 600
