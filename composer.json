@@ -13,9 +13,12 @@
     "require-dev": {
         "phpunit/PHPUnit": "^5.7"
     },
+    "autoload": {
+        "psr-4": {}
+    },
     "extra": {
         "project-files": [
-            "mysite/*"
+            "app/*"
         ],
         "public-files": [
             ".htaccess",
