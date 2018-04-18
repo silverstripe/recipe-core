@@ -15,7 +15,7 @@
     },
     "extra": {
         "project-files": [
-            "mysite/*"
+            "app/*"
         ],
         "public-files": [
             ".htaccess",
