@@ -6,9 +6,9 @@
     "license": "BSD-3-Clause",
     "require": {
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/assets": "1.2.x-dev",
-        "silverstripe/config": "1.0.x-dev",
-        "silverstripe/framework": "4.2.x-dev"
+        "silverstripe/assets": "1.2.3@stable",
+        "silverstripe/config": "1.0.10@stable",
+        "silverstripe/framework": "4.2.3@stable"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7"
