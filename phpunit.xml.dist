@@ -1,0 +1,7 @@
+<phpunit bootstrap="vendor/silverstripe/framework/tests/bootstrap.php" colors="true">
+    <testsuite name="recipe-core">
+        <directory>vendor/silverstripe/assets/tests</directory>
+        <directory>vendor/silverstripe/config/tests</directory>
+        <directory>vendor/silverstripe/framework/tests</directory>
+    </testsuite>
+</phpunit>
