@@ -5,6 +5,5 @@ use SilverStripe\Security\Member;
 
 // remove PasswordValidator for SilverStripe 5.0
 $validator = PasswordValidator::create();
-$validator->setMinLength(8);
-$validator->setHistoricCount(6);
+// Settings are registered via Injector configuration - see passwords.yml in framework
 Member::set_password_validator($validator);

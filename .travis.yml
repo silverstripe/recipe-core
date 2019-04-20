@@ -1,0 +1,32 @@
+language: php
+
+env:
+  global:
+    - COMPOSER_ROOT_VERSION=5.x-dev
+
+matrix:
+  include:
+    - php: 7.1
+      env: DB=MYSQL
+    - php: 7.2
+      env: DB=PGSQL
+    - php: 7.3
+      env: DB=MYSQL
+    - php: 7.3
+      env: DB=MYSQL
+
+before_script:
+  - phpenv rehash
+  - phpenv config-rm xdebug.ini
+
+  - composer validate
+  - composer require --no-update silverstripe-themes/simple:~3.2.0 silverstripe/admin:2.x-dev silverstripe/versioned:2.x-dev mikey179/vfsStream:^1.6
+  - if [[ $DB == PGSQL ]]; then composer require silverstripe/postgresql:3.x-dev --no-update; fi
+  - composer install --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
+
+  # Validate cow schema
+  - composer global require silverstripe/cow ^2
+  - ~/.config/composer/vendor/bin/cow schema:validate
+
+script:
+  - vendor/bin/phpunit --testsuite recipe-core
