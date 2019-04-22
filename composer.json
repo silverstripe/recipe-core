@@ -11,7 +11,7 @@
         "silverstripe/framework": "4.5.x-dev"
     },
     "require-dev": {
-        "phpunit/PHPUnit": "^5.7"
+        "phpunit/phpunit": "^5.7"
     },
     "extra": {
         "project-files": [
