@@ -20,9 +20,7 @@
         "public-files": [
             ".htaccess",
             "web.config",
-            "index.php",
-            "install.php",
-            "install-frameworkmissing.html"
+            "index.php"
         ],
         "branch-alias": {
             "4.x-dev": "4.5.x-dev"
