@@ -1,5 +1,6 @@
 ---
-Name: mimeuploadvalidator
+Name: app-mimeuploadvalidator
+After: '#mimeuploadvalidator'
 Only:
   moduleexists: 'silverstripe/mimevalidator'
 ---
