@@ -7,7 +7,7 @@
     "require": {
         "silverstripe/recipe-plugin": "^1.2",
         "silverstripe/assets": "1.6.x-dev",
-        "silverstripe/config": "1.1.x-dev",
+        "silverstripe/config": "1.0.x-dev",
         "silverstripe/framework": "4.6.x-dev",
         "silverstripe/mimevalidator": "2.0.x-dev"
     },
