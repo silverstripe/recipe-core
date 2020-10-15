@@ -28,7 +28,7 @@ before_script:
   - phpenv config-rm xdebug.ini
 
   - composer validate
-  - composer require --no-update silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.x-dev silverstripe/versioned:1.x-dev mikey179/vfsStream:^1.6
+  - composer require --no-update silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.x-dev silverstripe/versioned:1.x-dev mikey179/vfsStream:^1.6 marcj/topsort:^2@dev
   - if [[ $DB == PGSQL ]]; then composer require silverstripe/postgresql:2.x-dev --no-update; fi
   - composer update --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile $COMPOSER_ARG
 
