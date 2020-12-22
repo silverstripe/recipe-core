@@ -1,40 +1,42 @@
-language: php
+version: ~> 1.0
 
-dist: xenial
-
-services:
-  - mysql
-  - postgresql
+import:
+  - silverstripe/silverstripe-travis-shared:config/provision/self.yml
 
 env:
   global:
-    - COMPOSER_ROOT_VERSION=4.x-dev
+    - COMPOSER_ROOT_VERSION="4.x-dev"
+    - REQUIRE_EXTRA="silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.x-dev silverstripe/versioned:1.x-dev mikey179/vfsstream:^1.6"
+    - PHPUNIT_SUITE="recipe-core"
 
-matrix:
+# Using a manual matrix to exlude PHPUNIT_COVERAGE_TEST which was having an unknown error
+# https://travis-ci.com/github/silverstripe/recipe-core/jobs/457587137
+jobs:
+  fast_finish: true
   include:
     - php: 7.1
-      env: DB=MYSQL COMPOSER_ARG=--prefer-lowest
+      env:
+        - DB=MYSQL
+        - PHPUNIT_TEST=1
+        - COMPOSER_ARG=--prefer-lowest
     - php: 7.2
-      env: DB=PGSQL
+      env:
+        - DB=PGSQL
+        - PHPUNIT_TEST=1
+        - COW_TEST=1
     - php: 7.3
-      env: DB=MYSQL
+      env:
+        - DB=MYSQL
+        - PDO=1
+        - PHPUNIT_TEST=1
+        - PHPCS_TEST=1
     - php: 7.4
-      env: DB=MYSQL
+      env:
+        - DB=MYSQL
+        #- PHPUNIT_COVERAGE_TEST=1
+        - PHPUNIT_TEST=1
     - php: nightly
-      env: DB=MYSQL COMPOSER_ARG=--ignore-platform-reqs COMPOSER_REQS=marcj/topsort:^2@dev
-
-before_script:
-  - phpenv rehash
-  - phpenv config-rm xdebug.ini
-
-  - composer validate
-  - composer require --no-update silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.x-dev silverstripe/versioned:1.x-dev mikey179/vfsStream:^1.6 $COMPOSER_REQS
-  - if [[ $DB == PGSQL ]]; then composer require silverstripe/postgresql:2.x-dev --no-update; fi
-  - composer update --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile $COMPOSER_ARG
-
-  # Validate cow schema
-  - composer global require silverstripe/cow dev-master $COMPOSER_ARG
-  - ~/.config/composer/vendor/bin/cow schema:validate
-
-script:
-  - vendor/bin/phpunit --testsuite recipe-core
+      env:
+        - DB=MYSQL
+        - PHPUNIT_TEST=1
+        - COMPOSER_INSTALL_ARG=--ignore-platform-reqs
