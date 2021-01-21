@@ -1,7 +1,5 @@
 ## SilverStripe Core Recipe
 
-[![Build Status](https://api.travis-ci.com/silverstripe/recipe-core.svg?branch=4)](https://travis-ci.com/silverstripe/recipe-core)
-
 Base framework-only recipe for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation.
 This includes the core modules:
 
