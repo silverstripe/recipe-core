@@ -7,10 +7,10 @@
     "require": {
         "php": "^7.1 || ^8",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/assets": "1.x-dev",
-        "silverstripe/config": "1.1.x-dev",
-        "silverstripe/framework": "4.x-dev",
-        "silverstripe/mimevalidator": "2.x-dev"
+        "silverstripe/assets": "1.8.0-rc1",
+        "silverstripe/config": "1.1.0@stable",
+        "silverstripe/framework": "4.8.0-rc1",
+        "silverstripe/mimevalidator": "2.1.1@stable"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
