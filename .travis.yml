@@ -5,8 +5,7 @@ import:
 
 env:
   global:
-    - COMPOSER_ROOT_VERSION="4.x-dev"
-    - REQUIRE_EXTRA="silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.x-dev silverstripe/versioned:1.x-dev mikey179/vfsstream:^1.6"
+    - REQUIRE_EXTRA="silverstripe-themes/simple:~3.2.0 silverstripe/admin:1.8.x-dev silverstripe/versioned:1.8.x-dev mikey179/vfsstream:^1.6"
     - PHPUNIT_SUITE="recipe-core"
 
 # Using a manual matrix to exlude PHPUNIT_COVERAGE_TEST which was having an unknown error
