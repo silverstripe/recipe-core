@@ -1,7 +1,7 @@
 {
   "github-slug": "silverstripe/recipe-core",
   "child-stability-inherit": true,
-  "dependency-constraint": "exact",
+  "dependency-constraint": "loose",
   "vendors": [
     "silverstripe"
   ],
