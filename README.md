@@ -1,6 +1,6 @@
-## SilverStripe Core Recipe
+## Silverstripe Core Recipe
 
-Base framework-only recipe for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation.
+Base framework-only recipe for a Silverstripe ([http://silverstripe.org](http://silverstripe.org)) installation.
 This includes the core modules:
 
  * [framework](http://github.com/silverstripe/silverstripe-framework): Module including the base framework
@@ -11,4 +11,4 @@ This can be either added to an existing project or used as a project base for cr
 basic framework-only install.
 
 See the [recipe plugin](https://github.com/silverstripe/recipe-plugin) page for instructions on how
-SilverStripe recipes work.
+Silverstripe recipes work.
