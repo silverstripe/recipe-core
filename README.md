@@ -1,5 +1,8 @@
 ## Silverstripe Core Recipe
 
+[![CI](https://github.com/silverstripe/recipe-core/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/recipe-core/actions/workflows/ci.yml)
+[![Silverstripe supported module](https://img.shields.io/badge/silverstripe-supported-0071C4.svg)](https://www.silverstripe.org/software/addons/silverstripe-commercially-supported-module-list/)
+
 Base framework-only recipe for a Silverstripe ([http://silverstripe.org](http://silverstripe.org)) installation.
 This includes the core modules:
 
