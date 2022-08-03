@@ -25,8 +25,7 @@
             ".htaccess",
             "web.config",
             "index.php"
-        ],
-        "resources-dir": "_resources"
+        ]
     },
     "config": {
         "process-timeout": 600
