@@ -15,7 +15,7 @@
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "silverstripe/versioned": "^2",
-        "mikey179/vfsstream": "^1.6.10"
+        "mikey179/vfsstream": "^1.6.11"
     },
     "extra": {
         "project-files": [
