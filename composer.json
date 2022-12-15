@@ -19,6 +19,7 @@
     },
     "extra": {
         "project-files": [
+            ".htaccess",
             "app/*"
         ],
         "public-files": [
