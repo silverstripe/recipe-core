@@ -7,9 +7,9 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/assets": "~1.12.0@rc",
-        "silverstripe/config": "~1.5.0@rc",
-        "silverstripe/framework": "~4.12.0@rc",
+        "silverstripe/assets": "~1.12.0@stable",
+        "silverstripe/config": "~1.5.0@stable",
+        "silverstripe/framework": "~4.12.0@stable",
         "silverstripe/mimevalidator": "~2.4.0@stable"
     },
     "require-dev": {
