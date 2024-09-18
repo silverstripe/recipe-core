@@ -13,7 +13,7 @@
         "silverstripe/mimevalidator": "4.x-dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.6",
+        "phpunit/phpunit": "^11.3",
         "silverstripe/versioned": "^3",
         "mikey179/vfsstream": "^1.6.11"
     },
