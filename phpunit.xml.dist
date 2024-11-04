@@ -5,6 +5,7 @@
             <directory>vendor/silverstripe/framework/tests</directory>
             <directory>vendor/silverstripe/assets/tests</directory>
             <directory>vendor/silverstripe/config/tests</directory>
+            <directory>vendor/silverstripe/template-engine/tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
