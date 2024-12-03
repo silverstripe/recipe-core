@@ -6,12 +6,12 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": "^8.3",
-        "silverstripe/recipe-plugin": "2.x-dev",
-        "silverstripe/assets": "3.x-dev",
-        "silverstripe/config": "3.x-dev",
-        "silverstripe/framework": "6.x-dev",
-        "silverstripe/mimevalidator": "4.x-dev",
-        "silverstripe/template-engine": "1.x-dev"
+        "silverstripe/recipe-plugin": "2.0.x-dev",
+        "silverstripe/assets": "3.0.x-dev",
+        "silverstripe/config": "3.0.x-dev",
+        "silverstripe/framework": "6.0.x-dev",
+        "silverstripe/mimevalidator": "4.0.x-dev",
+        "silverstripe/template-engine": "1.0.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^11.3",
